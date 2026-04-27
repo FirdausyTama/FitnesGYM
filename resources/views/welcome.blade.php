@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FitnesGYM | Pushing Limits</title>
+    <link rel="icon" type="image/png" href="{{ asset('images/logogym.png') }}">
     <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
 </head>
 
@@ -24,8 +25,10 @@
             <a href="#programs">Program</a>
             <a href="#pricing">Harga</a>
             <a href="#contact">Kontak</a>
+            <div class="nav-auth">
+                <a href="{{ route('login') }}" class="btn-login">Masuk</a>
+            </div>
         </div>
-        <a href="#contact" class="btn-login">Gabung Sekarang</a>
     </nav>
 
     <!-- Hero Section -->
