@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>FitnesGYM | Pushing Limits</title>
     <link rel="stylesheet" href="{{ asset('css/landing.css') }}">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
         <div class="logo">Fitnes<span>GYM</span></div>
-        
+
         <!-- Mobile Menu Toggle -->
         <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <label for="nav-toggle" class="nav-toggle-label">
@@ -23,22 +25,15 @@
             <a href="#pricing">Harga</a>
             <a href="#contact">Kontak</a>
         </div>
-        @if (Route::has('login'))
-            <div class="nav-auth">
-                @auth
-                    <a href="{{ url('/dashboard') }}" class="btn-login">Dashboard</a>
-                @else
-                    <a href="{{ route('login') }}" class="btn-login">Masuk</a>
-                @endauth
-            </div>
-        @endif
+        <a href="#contact" class="btn-login">Gabung Sekarang</a>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1 class="animate-fade">PUSH YOUR <span>LIMITS</span></h1>
-            <p class="animate-fade" style="animation-delay: 0.2s;">Transformasi tubuh dan pikiran Anda dengan pelatih profesional dan fasilitas terbaik di kota ini.</p>
+            <p class="animate-fade" style="animation-delay: 0.2s;">Transformasi tubuh dan pikiran Anda dengan pelatih
+                profesional dan fasilitas terbaik di kota ini.</p>
             <div class="cta-group animate-fade" style="animation-delay: 0.4s;">
                 <a href="#pricing" class="btn-primary">Daftar Sekarang</a>
                 <a href="#programs" class="btn-secondary">Lihat Program</a>
@@ -49,8 +44,10 @@
     <!-- Running Text Strip -->
     <div class="marquee-strip">
         <div class="marquee-content">
-            <span>AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA // AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA //</span>
-            <span>AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA // AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA //</span>
+            <span>AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA //
+                AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA //</span>
+            <span>AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA //
+                AEROBIK & FITNESS // BUKA SETIAP HARI // NO PAIN NO GAIN // JOIN FitnesGYM // HARGA MAHASISWA //</span>
         </div>
     </div>
 
@@ -96,7 +93,8 @@
         <div class="section-title animate-fade" style="margin-bottom: 2rem;">
             <h3 style="font-size: 1.5rem; text-transform: uppercase;">Paket Harian</h3>
         </div>
-        <div class="pricing-grid" style="margin-bottom: 5rem; justify-content: center; grid-template-columns: repeat(auto-fit, minmax(280px, 350px));">
+        <div class="pricing-grid"
+            style="margin-bottom: 5rem; justify-content: center; grid-template-columns: repeat(auto-fit, minmax(280px, 350px));">
             <!-- Harian Non-Member -->
             <div class="price-card animate-fade">
                 <h3>Non-Member</h3>
@@ -114,7 +112,9 @@
             <div class="price-card animate-fade" style="animation-delay: 0.1s; border: 1px solid var(--primary-glow);">
                 <h3>Harian Member</h3>
                 <div class="price"><span>Rp</span>15k<span>/hari</span></div>
-                <div class="reg-fee" style="margin-top: -10px; margin-bottom: 15px; font-size: 0.85rem; color: var(--primary);">+ Biaya Registrasi 25rb</div>
+                <div class="reg-fee"
+                    style="margin-top: -10px; margin-bottom: 15px; font-size: 0.85rem; color: var(--primary);">+ Biaya
+                    Registrasi 25rb</div>
                 <ul>
                     <li>Akses Gym Lebih Hemat</li>
                     <li>Berlaku untuk Member</li>
@@ -129,7 +129,8 @@
         <div class="section-title animate-fade" style="margin-bottom: 2rem;">
             <h3 style="font-size: 1.5rem; text-transform: uppercase;">Paket Membership</h3>
         </div>
-        <div class="pricing-grid" style="margin-bottom: 5rem; justify-content: center; grid-template-columns: repeat(auto-fit, minmax(280px, 350px));">
+        <div class="pricing-grid"
+            style="margin-bottom: 5rem; justify-content: center; grid-template-columns: repeat(auto-fit, minmax(280px, 350px));">
             <!-- Paket Bulanan -->
             <div class="price-card animate-fade">
                 <h3>1 Bulan</h3>
@@ -145,7 +146,9 @@
 
             <!-- Paket Pro (3 Bln) -->
             <div class="price-card featured animate-fade" style="animation-delay: 0.1s; position: relative;">
-                <div class="badge-deal" style="position: absolute; top: 0; right: 0; background: #ffbd03; color: #000; padding: 6px 15px; border-radius: 0 15px 0 15px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">Best Deal</div>
+                <div class="badge-deal"
+                    style="position: absolute; top: 0; right: 0; background: #ffbd03; color: #000; padding: 6px 15px; border-radius: 0 15px 0 15px; font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px;">
+                    Best Deal</div>
                 <h3>3 Bulan</h3>
                 <div class="price"><span>Rp</span>400k<span>/3 bln</span></div>
                 <ul>
@@ -175,7 +178,8 @@
         <div class="section-title animate-fade" style="margin-bottom: 2rem;">
             <h3 style="font-size: 1.5rem; text-transform: uppercase;">Personal Trainer</h3>
         </div>
-        <div class="pricing-grid" style="justify-content: center; grid-template-columns: repeat(auto-fit, minmax(280px, 350px));">
+        <div class="pricing-grid"
+            style="justify-content: center; grid-template-columns: repeat(auto-fit, minmax(280px, 350px));">
             <!-- PT 5x -->
             <div class="price-card animate-fade">
                 <h3>5x Pertemuan</h3>
@@ -244,19 +248,16 @@
                     <div class="info-icon">📍</div>
                     <div class="info-text">
                         <h3>Alamat</h3>
-                        <p>Jl. Monjali No.111, RW.2, Karanggeneng, Sendangadi, Kec. Mlati, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55285</p>
+                        <p>Jl. Monjali No.111, RW.2, Karanggeneng, Sendangadi, Kec. Mlati, Kabupaten Sleman, Daerah
+                            Istimewa Yogyakarta 55285</p>
                     </div>
                 </div>
             </div>
             <div class="contact-map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.970855558626!2d110.33364504395989!3d-7.803248457450711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Yogyakarta%20City%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1777304340959!5m2!1sen!2sid" 
-                    width="100%" 
-                    height="100%" 
-                    style="border:0; border-radius: 15px; min-height: 350px;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63245.970855558626!2d110.33364504395989!3d-7.803248457450711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5787bd5b6bc5%3A0x21723fd4d3684f71!2sYogyakarta%2C%20Yogyakarta%20City%2C%20Special%20Region%20of%20Yogyakarta!5e0!3m2!1sen!2sid!4v1777304340959!5m2!1sen!2sid"
+                    width="100%" height="100%" style="border:0; border-radius: 15px; min-height: 350px;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
         </div>
@@ -271,35 +272,45 @@
                     <!-- Original Cards -->
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span>
                         </div>
                         <p>"Tempatnya bersih dan alat-alatnya sangat lengkap. Coach-nya juga sangat ramah!"</p>
                         <h4>- Andi Pratama</h4>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-empty">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-empty">★</span>
                         </div>
                         <p>"Harga member sangat terjangkau untuk fasilitas sekelas ini. Best deal banget!"</p>
                         <h4>- Budi Santoso</h4>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span>
                         </div>
                         <p>"Sangat nyaman latihan di sini. QR Member-nya juga bikin proses masuk jadi cepat."</p>
                         <h4>- Citra Lestari</h4>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span>
                         </div>
                         <p>"PT-nya sangat profesional dan benar-benar membimbing sampai target tercapai."</p>
                         <h4>- Dedi Kurniawan</h4>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-empty">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-empty">★</span>
                         </div>
                         <p>"Lokasi strategis dan parkir luas. Latihan jadi makin semangat setiap hari!"</p>
                         <h4>- Eka Putri</h4>
@@ -307,21 +318,27 @@
                     <!-- Cloned Cards for Infinite Effect -->
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span>
                         </div>
                         <p>"Tempatnya bersih dan alat-alatnya sangat lengkap. Coach-nya juga sangat ramah!"</p>
                         <h4>- Andi Pratama</h4>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-empty">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-empty">★</span>
                         </div>
                         <p>"Harga member sangat terjangkau untuk fasilitas sekelas ini. Best deal banget!"</p>
                         <h4>- Budi Santoso</h4>
                     </div>
                     <div class="testimonial-card">
                         <div class="stars">
-                            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span>
+                            <span class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span><span class="star-fill">★</span><span
+                                class="star-fill">★</span>
                         </div>
                         <p>"Sangat nyaman latihan di sini. QR Member-nya juga bikin proses masuk jadi cepat."</p>
                         <h4>- Citra Lestari</h4>
@@ -351,7 +368,7 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 // Close mobile menu if open
                 const navToggle = document.getElementById('nav-toggle');
                 if (navToggle) navToggle.checked = false;
@@ -374,4 +391,5 @@
         document.querySelectorAll('.animate-fade').forEach(el => observer.observe(el));
     </script>
 </body>
+
 </html>
