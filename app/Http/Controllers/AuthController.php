@@ -10,7 +10,9 @@ class AuthController extends Controller
     public function showLogin()
     {
         if (Auth::check()) {
-            return redirect()->route('admin.dashboard');
+            return Auth::user()->role === 'admin' 
+                ? redirect()->route('admin.dashboard') 
+                : redirect()->route('member.dashboard');
         }
         return view('auth.login');
     }
@@ -24,7 +26,10 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials, $request->remember)) {
             $request->session()->regenerate();
-            return redirect()->intended(route('admin.dashboard'));
+            
+            return Auth::user()->role === 'admin' 
+                ? redirect()->intended(route('admin.dashboard')) 
+                : redirect()->intended(route('member.dashboard'));
         }
 
         return back()->withErrors([

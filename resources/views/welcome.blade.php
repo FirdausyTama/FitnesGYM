@@ -108,7 +108,7 @@
                     <li>Loker & Kamar Mandi</li>
                     <li>Tanpa Biaya Registrasi</li>
                 </ul>
-                <a href="#" class="btn-secondary">Pilih Visit</a>
+                <a href="#" class="btn-secondary">Langsung Datang</a>
             </div>
 
             <!-- Harian Member -->
@@ -144,7 +144,7 @@
                     <li>Loker & Kamar Mandi</li>
                     <li>Belum Termasuk Registrasi</li>
                 </ul>
-                <a href="#" class="btn-secondary">Pilih Paket</a>
+                <a href="https://wa.me/6282119454211?text=Hallo%20Fitnes%20GYM,%20saya%20tertarik%20dengan%20paket%20Membership%201%20Bulan" target="_blank" class="btn-secondary">Pilih Paket</a>
             </div>
 
             <!-- Paket Pro (3 Bln) -->
@@ -160,7 +160,7 @@
                     <li>Loker & Kamar Mandi</li>
                     <li>Termasuk Biaya Registrasi</li>
                 </ul>
-                <a href="#" class="btn-primary">Pilih Paket</a>
+                <a href="https://wa.me/6282119454211?text=Hallo%20Fitnes%20GYM,%20saya%20tertarik%20dengan%20paket%20Membership%203%20Bulan" target="_blank" class="btn-primary">Pilih Paket</a>
             </div>
 
             <!-- Paket Ultimate (6 Bln) -->
@@ -173,7 +173,7 @@
                     <li>Loker & Kamar Mandi</li>
                     <li>Termasuk Biaya Registrasi</li>
                 </ul>
-                <a href="#" class="btn-secondary">Pilih Paket</a>
+                <a href="https://wa.me/6282119454211?text=Hallo%20Fitnes%20GYM,%20saya%20tertarik%20dengan%20paket%20Membership%206%20Bulan" target="_blank" class="btn-secondary">Pilih Paket</a>
             </div>
         </div>
 
@@ -193,7 +193,7 @@
                     <li>Sudah Termasuk Registrasi</li>
                     <li>Rencana Latihan Custom</li>
                 </ul>
-                <a href="#" class="btn-secondary">Hubungi Coach</a>
+                <a href="https://wa.me/6282119454211?text=Hallo%20Fitnes%20GYM,%20saya%20tertarik%20dengan%20paket%20Personal%20Trainer%205x%20Pertemuan" target="_blank" class="btn-secondary">Hubungi Coach</a>
             </div>
 
             <!-- PT 7x -->
@@ -206,7 +206,7 @@
                     <li>Sudah Termasuk Registrasi</li>
                     <li>Rencana Latihan Custom</li>
                 </ul>
-                <a href="#" class="btn-secondary">Hubungi Coach</a>
+                <a href="https://wa.me/6282119454211?text=Hallo%20Fitnes%20GYM,%20saya%20tertarik%20dengan%20paket%20Personal%20Trainer%207x%20Pertemuan" target="_blank" class="btn-secondary">Hubungi Coach</a>
             </div>
 
             <!-- PT 13x -->
@@ -219,7 +219,7 @@
                     <li>Sudah Termasuk Registrasi</li>
                     <li>Rencana Latihan Custom</li>
                 </ul>
-                <a href="#" class="btn-secondary">Hubungi Coach</a>
+                <a href="https://wa.me/6282119454211?text=Hallo%20Fitnes%20GYM,%20saya%20tertarik%20dengan%20paket%20Personal%20Trainer%2013x%20Pertemuan" target="_blank" class="btn-secondary">Hubungi Coach</a>
             </div>
         </div>
     </section>
@@ -393,6 +393,12 @@
 
         document.querySelectorAll('.animate-fade').forEach(el => observer.observe(el));
     </script>
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6282119454211?text=Hallo%20Fitnes%20GYM,%20saya%20ingin%20bertanya..." target="_blank" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="currentColor">
+            <path d="M16 2a13 13 0 00-11 19.8L3 29l7.3-1.9A13 13 0 1016 2zm0 24a11 11 0 01-5.7-1.6l-.4-.2-4.3 1.1 1.1-4.2-.3-.4A11 11 0 1116 26zm6.1-8.3c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.1-.7.2-.2.3-.8 1-.9 1.2-.1.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.4.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5s-.7-1.8-.9-2.3c-.3-.6-.5-.5-.7-.5h-.7c-.2 0-.6.1-.9.4s-1.1 1.1-1.1 2.6 1.1 3 1.2 3.2c.2.2 2.1 3.2 5.2 4.5.7.3 1.3.5 1.7.7.7.2 1.4.2 2 .1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.3.2-1.4-.1-.1-.3-.2-.6-.3z" />
+        </svg>
+    </a>
 </body>
 
 </html>
